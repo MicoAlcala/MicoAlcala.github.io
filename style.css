@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Roboto';
+    overflow-x: hidden;
+  
+  }
+  
+  .container-fluid{
+      background-color: black; 
+      overflow: hidden;
+  }
+  
+  
+  #aa{
+    color: green;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: bold;
+  }
+  #aa:hover{
+    color: red;
+  }
+  
+  #n1 #l1 {
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    position: relative;
+    color: red;
+  }
+  #n1 #l1::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+  }
+  
+  #n1 #l1:hover:after {
+    width: 100%;
+  }
+  .sidenav a {
+    position: absolute;
+    right: -100px;
+    transition: 0.5s;
+    width: 155px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(10,25,47);
+    border-radius: 30px 0 0 30px;
+  }
+
+  .fa-brands{
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+  i{
+    color: rgb(10,25,47);
+  }
+  
+  .sidenav a:hover {
+    right: 0;
+  }
+  
+  #facebook {
+    top: 200px;
+    background-color: red;
+    color: black;
+    
+  }
+  
+  #linkedin {
+    top: 270px;
+    background-color: red;
+    color: rgb(10,25,47);
+  }
+  
+  #discord {
+    top: 340px;
+    background-color: red;
+    color: rgb(10,25,47);
+  }
+  
+  #youtube {
+    top: 410px;
+    background-color: red;
+    color: rgb(10,25,47);
+  }
+  #hero1{
+    margin-top: 100px;
+    color: rgb(202,212,244);
+    transition: .8s;
+  }
+  #hero1:hover{
+    color: red;
+  }
+  #devep{
+    color: #45f3ff;
+    transition: .8s;
+  }
+  #devep:hover{
+    color: red;
+  }
+  #me1{
+    font-size: 2rem;
+    color:  #45f3ff;
+    transition: .8s;
+  }
+  #me1:hover{
+    font-size: 5rem;
+    color: yellowgreen;
+  
+  }
+  #pp{
+    color: rgb(202,212,244);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    transition: .5s;
+  }
+  #pp:hover{
+    font-size: 8rem;
+    color: #45f3ff;
+  
+  }
+  .ff1{
+    color: #45f3ff;
+    margin-top: 100px;
+  }
+  #fp1{
+    color: #45f3ff;
+  }
+  .gm1{
+    font-size: 1rem;
+    transition: .5s;
+  }
+  
+  .gm1:hover{
+    font-size: 5rem;
+  }
+  #button77 {
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid red;
+    background: transparent;
+    color: green;
+    cursor: pointer;
+    position: 0;
+  
+  }
+  #span11{
+   
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  #span11 > a{
+    text-decoration: none;
+  }
+  #button77:hover span{
+    width: 100%;
+  }
+  #button77:hover{
+    border: none;
+    background: red;
+    color: rgb(10,25,47);
+  
+  }
+  #skills-offer{
+    color: green;
+    background: black;
+    padding: 0 50px 0 50px;
+    border-radius: 25px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    transition: .8s;
+  }
+  #skills-offer:hover{
+    color: red;
+  }
+  #f-p{
+    color: green; 
+    transition: .8s;
+  }
+  #f-p:hover{
+    font-size: 5rem;
+    color: red;
+  }
+  #wwdd{
+    color: green;
+  }
+  #icon-1{
+    color: green;
+    transition: .8s;
+  }
+  #icon-1:hover{
+    color: red;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 345px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px red;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: red;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color:rgb(10, 25, 47);
+    color: green;
+    transform: rotateY(180deg);
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem; 
+  
+    }
+    #mySidenav{
+      display: none;
+    }
+  }
+  /* about me */
+  #card
+  {
+      position: relative;
+      width: 350px;
+      height: 190px;
+      background: green;
+      transition: 0.5s;
+  }
+  #card:hover
+  {
+      height: 450px;
+      color: red;
+  }
+  #card #lines
+  {
+      position: absolute;
+      inset: 0;
+      background: red;
+      overflow: hidden;
+  }
+  #card #lines::before
+  {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      /* transform: translate(-50%, -50%); */
+      width: 600px;
+      height: 120px;
+      background: linear-gradient(transparent,  green, 
+      green,  green, transparent);
+      animation: animate 4s linear infinite;
+  }
+  @keyframes animate
+  {
+      0%
+      {
+          transform: translate(-50%, -50%) rotate(0deg);
+      }
+      100%
+      {
+          transform: translate(-50%, -50%) rotate(360deg);
+      }
+  }
+  #card #lines::after
+  {
+      content: '';
+      position: absolute;
+      inset: 3px;
+      background-color: black;
+  }
+  #card #img8x
+  {
+      position: absolute;
+      top: -50px;
+      left: 172px;
+      transform: translate(-50%);
+      width: 75px;
+      height: 75px;
+      background: rgb(1, 2, 3);
+      transition: 0.5s;
+      z-index: 10;
+      overflow: hidden;
+  }
+  #card:hover #img8x
+  {
+      width: 75px;
+      height: 75px;
+  }
+  #card #img8x::before
+  {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 700px;
+      height: 80%;
+      transform: translate(-50% -50%);
+      background: linear-gradient(red, 
+      red,  green);
+      animation: animate2 6s linear infinite
+  }
+  @keyframes animate2
+  {
+      0%
+      {
+          transform: translate(-50%, -50%) rotate(360deg);
+      }
+          100%
+      {
+          transform: translate(-50%, -50%) rotate(0deg);
+      }
+  }
+  #card #img8x::after
+  {
+      content: '';
+      position: absolute;
+      background: red;
+  }
+  #card #img8x img
+  {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      z-index: 1;
+      width: calc(100% - 6px);
+      height: calc(100% - 6px);
+      filter: grayscale(1)
+  }
+  #card #cont
+  {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      overflow: hidden;
+  }
+  #card #cont #details
+  {
+      padding: 40px;
+      text-align: center;
+      width: 100%;
+      transition: 0.5s;
+      transform: translateY(145px);
+  }
+  #card:hover #cont #details
+  {
+      transform: translateY(0px);
+  }
+  
+  #card #cont #details h2
+  {
+      font-size: 1.25em;
+      font-weight: 600;
+      color:  red;
+      line-height: 1.2em;
+  }
+  #card #cont #details h2 span
+  {
+      font-size: .75em;
+      font-weight: 500;
+      color: #19ee06;
+  }
+  #card #cont #details .data
+  {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+  }
+  #card #cont #details .data h3
+  {
+      font-size: 1em;
+      color:  #fff;
+      line-height: 1.2em;
+      font-weight: 600;
+  }
+  #card #cont #details .data h3 span
+  {
+      font-size: 0.85em;
+      font-weight: 400;
+      color: red;
+  }
+  #card #cont #details #actionBtn
+  {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      background-color: #000;
+  }
+ 
+  #card #cont #details #actionBtn button:nth-child(2)
+  {
+      background: black;
+  }
